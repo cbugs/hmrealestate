@@ -1,0 +1,5 @@
+services:
+  hmrestate.route_subscriber:
+    class: Drupal\hmrestate\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }

@@ -1,0 +1,43 @@
+.gin--dark-mode .claro-details{
+    margin: -5px 10px;
+}
+
+.view-header{
+    margin: 20px 0px;
+}
+
+.view-header a{
+    background: var(--colorGinPrimary);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.view-header a:hover{
+    color: white;
+}
+
+#block-gin-primary-local-tasks{
+    display:none;
+}
+
+:root {
+    --ginSidebarWidth: 0!important;
+}
+
+nav.breadcrumb{
+    display:none;
+}
+
+.home-toolbar-tab{
+    display:none!important;
+}
+
+.toolbar-menu .account{
+    display:none!important;
+}
+
+[data-drupal-selector="edit-preview"]{
+    display: none!important;
+}

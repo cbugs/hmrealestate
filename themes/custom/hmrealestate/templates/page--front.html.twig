@@ -1,0 +1,497 @@
+<div class="upper-wrap">
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand p-2 text-center" href="/">
+      <!-- <div>HM real estate</div> -->
+      <img width="30px" class="m-0" src="/sites/default/files/img/logo.png" />
+      <span class="text-yellow">HM Real Estate</span>
+    </a>
+    {% if logged_in %}
+    <div class="d-flex px-3">
+      {% if 'administrator' in user.getroles %}
+        <a class="text-white" href="/admin/content">Dashboard</a>
+      {% endif %}
+
+      {% if 'vendor' in user.getroles %}
+        <a class="text-white mx-2" title="dashboard" href="/vendor"><img width="30px" src="/sites/default/files/img/dsb.png" /></a>
+        <!-- <a class="text-white mx-2" title="logout" href="/user/logout"><img width="30px" src="/sites/default/files/img/logout.png" /></a> -->
+      {% endif %}
+
+      {% if 'buyer' in user.getroles %}
+        <a class="text-white mx-2" title="dashboard" href="/buyer"><img width="30px" src="/sites/default/files/img/dsb.png" /></a>
+        <!-- <a class="text-white mx-2" title="logout" href="/user/logout"><img width="30px" src="/sites/default/files/img/logout.png" /></a> -->
+      {% endif %}
+
+
+      {% if 'moderator' in user.getroles %}
+      <a class="text-white mx-2" title="dashboard" href="/moderator/vendor"><img width="30px" src="/sites/default/files/img/dsb.png" /></a>
+      <!-- <a class="text-white mx-2" title="logout" href="/user/logout"><img width="30px" src="/sites/default/files/img/logout.png" /></a> -->
+    {% endif %}
+      
+    </div>
+    {% endif %}
+  </nav>
+
+  <div id="wrapper-circle">
+    <div id="circle">
+      <div class="prems-fading-circle">
+        <div id="inner">
+          <div class="text-yellow text-about-us animate__animated animate__zoomIn">
+            About Us
+            <!-- <img
+              class="animate__animated animate__zoomIn"
+              style="width: 50%"
+              src="/sites/default/files/img/logo.png"
+            /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="containr container1">
+      <div class="row">
+        <div class="col-2">
+          <img src="/sites/default/files/img/join.png" />
+        </div>
+        <div class="col-10">
+          <h3>Join us now as a vendor or a buyer.</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="containr container2">
+      <div class="row">
+        <div class="col-2">
+          <img src="/sites/default/files/img/customer-behavior.png" />
+        </div>
+        <div class="col-10">
+          <h3>
+            As a buyer you will be able to easily send us your requirements for
+            your dream home.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="containr container3">
+      <div class="row">
+        <div class="col-2">
+          <img src="/sites/default/files/img/seller.png" />
+        </div>
+        <div class="col-10">
+          <h3>
+            As a vendor you will be able to sent us the property you want to
+            sell and we do the rest.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="containr container4">
+      <div class="row">
+        <div class="col-2">
+          <img src="/sites/default/files/img/dashboard.png" />
+        </div>
+        <div class="col-10">
+          <h3>Check your dashboard for any status updates anytime.</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="containr container5">
+      <div class="row">
+        <div class="col-2">
+          <img src="/sites/default/files/img/satisfaction.png" />
+        </div>
+        <div class="col-10">
+          <h3>
+            We will get back to you with the best matches for the property you
+            want to buy or sell.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="containr container6">
+      <div class="row">
+        <div class="col-2">
+          <img src="/sites/default/files/img/sunbathing.png" />
+        </div>
+        <div class="col-10">
+          <h3>Relax, we take care of the rest for you.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wrapper-slider">
+    <div id="carouselAbout" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselAbout"
+          data-bs-slide-to="0"
+          class="active"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAbout"
+          data-bs-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAbout"
+          data-bs-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAbout"
+          data-bs-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAbout"
+          data-bs-slide-to="4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselAbout"
+          data-bs-slide-to="5"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="containr container0">
+            <div class="row text-center">
+              <div class="col-12">
+                <img src="/sites/default/files/img/join.png" />
+              </div>
+              <div class="col-12">
+                <h3>Join us now as a vendor or a buyer.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="containr container0">
+            <div class="row text-center">
+              <div class="col-12">
+                <img src="/sites/default/files/img/customer-behavior.png" />
+              </div>
+              <div class="col-12">
+                <h3>
+                  As a buyer you will be able to easily send us your
+                  requirements for your dream home.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="containr container0">
+            <div class="row text-center">
+              <div class="col-12">
+                <img src="/sites/default/files/img/seller.png" />
+              </div>
+              <div class="col-12">
+                <h3>
+                  As a vendor you will be able to sent us the property you want
+                  to sell and we do the rest.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="containr container0">
+            <div class="row text-center">
+              <div class="col-12">
+                <img src="/sites/default/files/img/dashboard.png" />
+              </div>
+              <div class="col-12">
+                <h3>Check your dashboard for any status updates anytime.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="containr container0">
+            <div class="row text-center">
+              <div class="col-12">
+                <img src="/sites/default/files/img/satisfaction.png" />
+              </div>
+              <div class="col-12">
+                <h3>
+                  We will get back to you with the best matches for the property
+                  you want to buy or sell.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="containr container0">
+            <div class="row text-center">
+              <div class="col-12">
+                <img src="/sites/default/files/img/sunbathing.png" />
+              </div>
+              <div class="col-12">
+                <h3>Relax, we take care of the rest for you.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselAbout"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselAbout"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  {% if not logged_in %}
+  <div class="form-wrapper m-auto animate__animated animate__slideInUp">
+    <div class="container my-5">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            id="home-tab"
+            data-bs-toggle="tab"
+            href="#login"
+            >Login</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            id="profile-tab"
+            data-bs-toggle="tab"
+            href="#register"
+            >Register</a
+          >
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="login" role="tabpanel">
+          <form
+            id="login-form"
+            class="text-center bootstrap-form ajax"
+            action="/api/user/login"
+            method="post"
+            novalidate
+          >
+            <div class="alert alert-danger d-none"></div>
+            <div class="alert alert-success d-none"></div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                checked
+                type="radio"
+                name="role"
+                id="inlineRadio1"
+                value="vendor"
+              />
+              <label class="form-check-label" for="inlineRadio1">Vendor</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="role"
+                id="inlineRadio2"
+                value="buyer"
+              />
+              <label class="form-check-label" for="inlineRadio2">Buyer</label>
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                class="form-control"
+                placeholder="Email"
+              />
+              <div class="invalid-feedback">Email is invalid</div>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input
+                type="password"
+                name="password"
+                required
+                class="form-control"
+                placeholder="Password"
+              />
+              <div class="invalid-feedback">Password is required</div>
+            </div>
+            <button id="btn-login" type="submit" class="btn btn-primary mt-2">
+              Login
+            </button>
+            <div class="text-white mt-4">
+              <a class="text-white" href="/user/password">Reset Password</a>
+            </div>
+          </form>
+        </div>
+        <div class="tab-pane fade" id="register" role="tabpanel">
+          <form
+            id="register-form"
+            class="text-center bootstrap-form ajax"
+            method="post"
+            novalidate
+            action="/api/user/register"
+          >
+            <div class="alert alert-danger d-none"></div>
+            <div class="alert alert-success d-none"></div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                checked
+                type="radio"
+                name="role"
+                id="inlineRadio1"
+                value="vendor"
+              />
+              <label class="form-check-label" for="inlineRadio1">Vendor</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="role"
+                id="inlineRadio2"
+                value="buyer"
+              />
+              <label class="form-check-label" for="inlineRadio2">Buyer</label>
+            </div>
+
+            <div class="form-group">
+              <label>First Name</label>
+              <input
+                required 
+                type="text"
+                name="first_name"
+                class="form-control"
+                placeholder="First Name"
+              />
+              <div class="invalid-feedback">First Name is required</div>
+            </div>
+            <div class="form-group">
+              <label>Last Name</label>
+              <input
+                required 
+                type="text"
+                name="last_name"
+                class="form-control"
+                placeholder="Last Name"
+              />
+              <div class="invalid-feedback">Last Name is required</div>
+            </div>
+            <div class="form-group">
+              <label>Phone</label>
+              <input
+                required 
+                type="number"
+                name="phone"
+                class="form-control"
+                placeholder="Phone"
+              />
+              <div class="invalid-feedback">Phone Number is required</div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                required 
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+              />
+              <div class="invalid-feedback">Email is not valid</div>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input
+                required 
+                type="password"
+                name="password"
+                class="form-control"
+                placeholder="Password"
+              />
+              <div class="invalid-feedback">Password is required</div>
+            </div>
+            <button
+              id="btn-register"
+              type="submit"
+              class="btn btn-primary mt-2"
+            >
+              Register
+            </button>
+            <div class="text-white mt-4">
+              <a class="text-white" href="/user/password">Reset Password</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="contact-wrap mb-5 animate__animated animate__slideInUp">
+    <form class="container text-center bootstrap-form ajax" id="contact-form" method="post" action="/api/contact" novalidate>
+      <div class="alert alert-danger d-none"></div>
+      <div class="alert alert-success d-none"></div>
+      <div class="row">
+          <h1>Contact us</h1>
+      </div>
+      <div class="row">
+          <h4 style="text-align:center">We'd love to hear from you!</h4>
+      </div>
+      <div class="row input-container">
+          <div class="col-xs-12 p-1">
+              <input type="text" class="form-control" placeholder="Name" required />
+              <div class="invalid-feedback">Name is required</div>
+          </div>
+          <div class="col-md-6 col-sm-12 p-1">
+              <input type="email" class="form-control" placeholder="Email" required />
+              <div class="invalid-feedback">Email is required</div>
+          </div>
+          <div class="col-md-6 col-sm-12 p-1">
+              <input type="number" class="form-control"  placeholder="Phone" required />
+              <div class="invalid-feedback">Phone is required</div>
+          </div>
+          <div class="col-xs-12 p-1">
+              <textarea class="form-control"  placeholder="Message" required></textarea>
+              <div class="invalid-feedback">Message is required</div>
+          </div>
+          <div class="col-xs-12 p-1">
+            <input type="submit" class="btn btn-primary" value="Send Message" />
+          </div>
+        </form>
+    </div>
+    
+  
+  </div>
+  
+</div>
+

@@ -1,0 +1,12 @@
+<?php
+
+
+/**
+ * Implements hook_menu_local_tasks_alter().
+ */
+function disable_user_view_menu_local_tasks_alter(&$data, $route_name) {
+  // Remove not needed tab task.
+  if (!empty($data['tabs']) && isset($data['tabs'][0]['entity.user.canonical'])) {
+    unset($data['tabs'][0]['entity.user.canonical']);
+  }
+}

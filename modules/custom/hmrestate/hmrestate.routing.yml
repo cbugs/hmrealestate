@@ -1,0 +1,23 @@
+hmrestate.register:
+  path: "api/user/register"
+  defaults:
+    _controller: '\Drupal\hmrestate\Controller\HMRestController::register'
+  methods: [POST]
+  requirements:
+    _access: "TRUE"
+
+hmrestate.login:
+  path: "api/user/login"
+  defaults:
+    _controller: '\Drupal\hmrestate\Controller\HMRestController::login'
+  methods: [POST]
+  requirements:
+    _access: "TRUE"
+
+hmrestate.contact:
+  path: "api/contact"
+  defaults:
+    _controller: '\Drupal\hmrestate\Controller\HMRestController::contact'
+  methods: [POST]
+  requirements:
+    _access: "TRUE"

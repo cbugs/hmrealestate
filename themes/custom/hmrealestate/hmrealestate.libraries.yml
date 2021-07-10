@@ -1,0 +1,9 @@
+global-styling:
+  version: 1.x
+  js:
+    js/libs/validator.js: {}
+    js/script.js: {}
+  css:
+    theme:
+      css/style.css: {}
+      css/animate.css: {}

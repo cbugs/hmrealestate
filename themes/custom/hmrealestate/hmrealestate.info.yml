@@ -1,0 +1,21 @@
+name: HM Real Estate
+type: theme
+description: 'HM Real Estate Theme'
+package: Other
+core: 8.x
+libraries:
+- hmrealestate/global-styling
+
+base theme: bootstrap5
+
+regions:
+  branding: Branding
+  navigation: Main navigation
+  search: Search
+  featured: Featured
+  content: Content
+  right_sidebar: Right sidebar
+  footer_first: Footer First
+  footer_second: Footer Second
+  footer_third: Footer Third
+  footer_bottom: Footer Bottom

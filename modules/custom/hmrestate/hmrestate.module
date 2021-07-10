@@ -1,0 +1,17 @@
+<?php
+
+function hmrestate_user_presave(Drupal\Core\Entity\EntityInterface $user)
+{
+    $roles = $user->getRoles();
+    $role = $roles[1];
+    $username = $role.'-'.$user->getEmail();
+    $user->name->value = $username;
+}
+
+function hmrestate_form_alter(&$form, &$form_state, $form_id) {
+    if ($form_id === 'user_form') {
+        hide($form['user_picture']);
+        hide($form['contact']);
+        hide($form['timezone']);
+    }
+}
