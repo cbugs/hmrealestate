@@ -76,7 +76,7 @@ class HMRestController extends ControllerBase {
             }
             if(!$uid){
                 $_POST['role'] = 'admin';
-                $uid = \Drupal::service('user.auth')->authenticate('admin-'.$_POST['email'], $password);
+                $uid = \Drupal::service('user.auth')->authenticate('administrator-'.$_POST['email'], $password);
             }
 
             if($uid)
