@@ -20,8 +20,8 @@ class HMRestController extends ControllerBase {
 
     const REDIRECTS = [
         'admin' => '/admin/content',
-        'vendor' => '/vendor',
-        'buyer' => '/buyer',
+        'vendor' => '/admin/vendor',
+        'buyer' => '/admin/buyer',
         'moderator' => '/moderator/vendor'
     ];
 
